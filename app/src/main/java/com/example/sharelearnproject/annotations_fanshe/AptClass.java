@@ -1,4 +1,4 @@
-package com.example.sharelearnproject.annotations;
+package com.example.sharelearnproject.annotations_fanshe;
 
 public class AptClass{
     /**

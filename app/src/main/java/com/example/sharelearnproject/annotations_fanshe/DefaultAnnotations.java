@@ -1,7 +1,6 @@
-package com.example.sharelearnproject.annotations;
+package com.example.sharelearnproject.annotations_fanshe;
 
 import androidx.annotation.IntDef;
-import androidx.annotation.StringDef;
 
 public class DefaultAnnotations {
     public static final int RESULT_ERROR=0;

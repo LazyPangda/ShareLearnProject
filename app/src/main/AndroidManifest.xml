@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".annotations.AnnotationTestActivity">
+        <activity android:name=".annotations_fanshe.AnnotationTestActivity"></activity>
+        <activity android:name=".annotations_fanshe.AnnotationIntentActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".shejimoshi.agent.AgentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <!--避免黄色警告-->
+                <!-- 避免警告 -->
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

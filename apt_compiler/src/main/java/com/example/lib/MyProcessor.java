@@ -23,7 +23,7 @@ import javax.lang.model.util.Elements;
 import javax.tools.Diagnostic;
 import javax.tools.JavaFileObject;
 
-//自动生成META-INF/services/javax.annotation.processing.Processor文件（有时存在兼容性问题，可手动创建）
+//自动生成META-INF/services/javax.annotation.processing.Processor文件（在gradle版本5.0以上有时存在兼容性问题，可手动创建）
 //@AutoService(Processor.class)
 public class MyProcessor extends AbstractProcessor {
 
