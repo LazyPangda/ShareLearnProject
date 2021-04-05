@@ -32,5 +32,32 @@ public class AgentActivity extends AppCompatActivity {
 
         List<? super String>temList=new ArrayList<>();
         temList.add("1");
+
+
+
+
+
+
+//        public class TestDynamicProxy implements InvocationHandler {
+//            Object target;
+//            public TestDynamicProxy(Object target){
+//                this.target = target;
+//            }
+//            @Override public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+//                Log.e("wcwcwc", "proxy: " + proxy.getClass().getCanonicalName() + "\n" +
+//                        "method: " + method + "\n" +
+//                        "args: " + args);
+//                Object result = method.invoke(target, args);
+//                return result;
+//            }
+//        }
+//
+        //实际应场景。每次都会通过代理生成一个代理对象。
+//        RealAction realAction = new RealAction();
+//        Action action = (Action) Proxy.newProxyInstance(RealAction.class.getClassLoader(), new Class[]{Action.class}, new TestDynamicProxy(realAction));
+//        action.doWork();
+
+
+
     }
 }
