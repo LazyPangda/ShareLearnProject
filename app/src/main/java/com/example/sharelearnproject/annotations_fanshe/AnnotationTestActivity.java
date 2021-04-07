@@ -31,7 +31,7 @@ public class AnnotationTestActivity extends AppCompatActivity {
         //运行时注解
         //AnnotationUtils.init(this);
 
-        //编译时注解
+        //源码时注解
         BindViewTools.bind(this);
 
         for (int i = 0; i < 3; i++) {

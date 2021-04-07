@@ -74,8 +74,11 @@ public class MyProcessor extends AbstractProcessor {
         //得到所有注解
         Set<? extends Element> allElements = roundEnv.getElementsAnnotatedWith(BindView.class);
         for (Element element : allElements) {
+            //variableElement:注解的字段，方法参数
             VariableElement variableElement = (VariableElement) element;
+            //获得当前注解所在的class
             TypeElement classElement = (TypeElement) variableElement.getEnclosingElement();
+
             String fullClassName = classElement.getQualifiedName().toString();
             ClassCreatorProxy creatorProxy = mProxyMap.get(fullClassName);
             if (creatorProxy == null) {

@@ -14,12 +14,15 @@ import javax.lang.model.util.Elements;
 public class ClassCreatorProxy {
         private String mBindingClassName;
         private String mPackageName;
+        //类元素
         private TypeElement mTypeElement;
         private Map<Integer, VariableElement> mVariableElementMap = new HashMap<>();
 
         public ClassCreatorProxy(Elements elementUtils, TypeElement classElement) {
             this.mTypeElement = classElement;
+            //包元素
             PackageElement packageElement = elementUtils.getPackageOf(mTypeElement);
+
             String packageName = packageElement.getQualifiedName().toString();
             String className = mTypeElement.getSimpleName().toString();
             this.mPackageName = packageName;
@@ -37,7 +40,7 @@ public class ClassCreatorProxy {
         public String generateJavaCode() {
             StringBuilder builder = new StringBuilder();
             builder.append("package ").append(mPackageName).append(";\n\n");
-            builder.append("import com.example.aptandroidlib.*;\n");
+            //builder.append("import com.example.aptandroidlib.*;\n");
             builder.append('\n');
             builder.append("public class ").append(mBindingClassName);
             builder.append(" {\n");
