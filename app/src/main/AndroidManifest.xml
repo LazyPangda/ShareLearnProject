@@ -12,7 +12,9 @@
         <activity android:name=".shejimoshi.agent.AgentActivity"></activity>
         <activity android:name=".annotations_fanshe.AnnotationIntentActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".annotations_fanshe.AnnotationTestActivity">
+        <activity android:name=".annotations_fanshe.AnnotationTestActivity" />
+
+        <activity android:name=".suanfa.PaixuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!-- 避免警告 -->
