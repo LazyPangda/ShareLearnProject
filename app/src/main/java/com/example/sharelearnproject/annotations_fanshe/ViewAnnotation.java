@@ -4,7 +4,7 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-//生效范围。只在源码层生效。还有CLASS:编译层。RUNTIME:运行时层。他们之间是子集关系。
+//生效范围。SOURCE:只在源码层生效。还有CLASS:编译层。RUNTIME:运行时层。他们之间是子集关系。
 //注解获取view，必须是运行时。
 @Retention (RetentionPolicy.RUNTIME)
 //针对范围。FIELD:类成员

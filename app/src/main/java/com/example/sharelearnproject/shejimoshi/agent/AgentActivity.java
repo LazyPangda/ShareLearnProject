@@ -52,7 +52,7 @@ public class AgentActivity extends AppCompatActivity {
 //            }
 //        }
 //
-        //实际应场景。每次都会通过代理生成一个代理对象。
+//        //实际应场景。每次都会通过代理生成一个代理对象。
 //        RealAction realAction = new RealAction();
 //        Action action = (Action) Proxy.newProxyInstance(RealAction.class.getClassLoader(), new Class[]{Action.class}, new TestDynamicProxy(realAction));
 //        action.doWork();

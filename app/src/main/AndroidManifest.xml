@@ -9,11 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".shejimoshi.agent.AgentActivity"></activity>
+        <activity android:name=".shejimoshi.builder.BuilderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".shejimoshi.agent.AgentActivity" />
         <activity android:name=".annotations_fanshe.AnnotationIntentActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".annotations_fanshe.AnnotationTestActivity" />
-
         <activity android:name=".suanfa.PaixuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
