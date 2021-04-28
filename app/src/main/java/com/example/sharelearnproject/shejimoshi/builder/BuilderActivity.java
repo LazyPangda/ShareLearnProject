@@ -25,6 +25,10 @@ public class BuilderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_builder);
+        //匿名内部类创建
+        //EnjoyRetrofit retrofit = new EnjoyRetrofit().new Builder().baseUrl("").build();
+
+        //静态内部类创建
         EnjoyRetrofit retrofit = new EnjoyRetrofit.Builder().baseUrl("").build();
         EnjoyWeatherApi enjoyWeatherApi = retrofit.create(EnjoyWeatherApi.class);
         Call call = enjoyWeatherApi.getWeather("", "");

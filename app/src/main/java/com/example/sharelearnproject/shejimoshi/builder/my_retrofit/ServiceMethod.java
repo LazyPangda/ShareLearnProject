@@ -107,6 +107,7 @@ public class ServiceMethod {
 
             /**
              * 1 解析方法上的注解, 只处理POST与GET
+             * instanceof:测试左边的对象是否是右边类的实例。
              */
             for (Annotation methodAnnotation : methodAnnotations) {
                 if (methodAnnotation instanceof POST) {

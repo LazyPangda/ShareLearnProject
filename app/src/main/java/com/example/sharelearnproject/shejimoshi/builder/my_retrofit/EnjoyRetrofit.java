@@ -16,10 +16,11 @@ public class EnjoyRetrofit {
     final Call.Factory callFactory;
     final HttpUrl baseUrl;
 
-    EnjoyRetrofit(Call.Factory callFactory, HttpUrl baseUrl) {
+   public EnjoyRetrofit(Call.Factory callFactory, HttpUrl baseUrl) {
         this.callFactory = callFactory;
         this.baseUrl = baseUrl;
     }
+
 
     public <T> T create(final Class<T> service) {
         return (T) Proxy.newProxyInstance(service.getClassLoader(), new Class[]{service},
@@ -55,7 +56,7 @@ public class EnjoyRetrofit {
      * 构建者模式，将一个复杂对象的构建和它的表示分离，可以使使用者不必知道内部组成的细节。
      */
     public static final class Builder {
-        private HttpUrl baseUrl;
+        public HttpUrl baseUrl;
         //Okhttp->OkhttClient
         private Call.Factory callFactory;  //null
 
@@ -65,7 +66,7 @@ public class EnjoyRetrofit {
             return this;
         }
 
-        public Builder baseUrl(String baseUrl) {
+        public  Builder baseUrl(String baseUrl) {
             this.baseUrl = HttpUrl.get(baseUrl);
             return this;
         }
